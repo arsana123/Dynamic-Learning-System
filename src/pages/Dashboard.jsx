@@ -4,7 +4,7 @@ export default function Dashboard() {
   return (
     <div className="p-10">
 
-      {/* Title */}
+      
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function Dashboard() {
           <p className="text-gray-500 text-sm mt-1">Based on assessments</p>
         </motion.div>
 
-        {/* Card 2 */}
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export default function Dashboard() {
           <p className="text-gray-500 text-sm mt-1">Great progress!</p>
         </motion.div>
 
-        {/* Card 3 */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function Dashboard() {
 
       </div>
 
-      {/* Progress Section */}
+      
       <div className="mt-12 bg-white shadow rounded-xl p-6">
         <h2 className="text-2xl font-semibold mb-4">Your Progress</h2>
 
@@ -66,7 +66,7 @@ export default function Dashboard() {
         <p className="mt-3 text-gray-700 font-medium">65% Completed</p>
       </div>
 
-      {/* Recommended Section */}
+
       <div className="mt-12">
         <h2 className="text-2xl font-semibold mb-4">Recommended For You</h2>
 
