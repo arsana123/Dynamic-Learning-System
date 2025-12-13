@@ -2,62 +2,104 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="p-10">
+    <main className="p-8 lg:p-12">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <motion.h1
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
+          >
+            Learn faster with a personalized learning path
+          </motion.h1>
 
-      {/* Main Heading */}
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-gray-900 mb-4"
-      >
-        Welcome to Dynamic Learning Path
-      </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="mt-4 text-gray-700 max-w-xl"
+          >
+            We combine assessments, goals, and course performance to recommend the optimal sequence of modules for you — track progress and get smarter suggestions every week.
+          </motion.p>
 
-      {/* Intro Paragraph */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-        className="text-lg text-gray-700 max-w-2xl"
-      >
-        Our system analyzes your skills, learning goals, and performance to build a personalized learning journey tailored just for you.
-      </motion.p>
+          <div className="mt-6 flex flex-col sm:flex-row gap-3">
+            <a
+              href="/dashboard"
+              className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-3 text-white font-semibold shadow hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+            >
+              Get Started
+            </a>
 
-      {/* Start Button */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.7 }}
-        className="mt-8"
-      >
-        <a
-          href="/dashboard"
-          className="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-blue-700 transition"
+            <a
+              href="/courses"
+              className="inline-flex items-center justify-center rounded-lg border border-gray-200 px-5 py-3 text-gray-700 font-medium hover:bg-gray-50"
+            >
+              Browse Courses
+            </a>
+          </div>
+
+          <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
+            <li>• Tailored module ordering</li>
+            <li>• Strength-based recommendations</li>
+            <li>• Visual progress and milestones</li>
+            <li>• Bite-sized, focused modules</li>
+          </ul>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.15 }}
+          className="w-full h-56 md:h-72 lg:h-80 bg-gradient-to-tr from-blue-50 to-white rounded-xl shadow flex items-center justify-center"
+          aria-hidden
         >
-          Start Your Learning Path
-        </a>
-      </motion.div>
+          <div className="text-center text-blue-700">
+            <svg className="mx-auto mb-2" width="84" height="84" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2v10l3 2" stroke="#1e40af" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx="12" cy="12" r="9" stroke="#93c5fd" strokeWidth="1.5" />
+            </svg>
+            <p className="font-semibold">Personalized plans</p>
+            <p className="text-xs">Start with a short assessment</p>
+          </div>
+        </motion.div>
+      </section>
 
-      {/* Features Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-        
-        <div className="p-6 bg-white shadow rounded-xl">
-          <h2 className="text-xl font-bold mb-2">Personalized Learning</h2>
-          <p className="text-gray-600">AI-based recommendations created just for you.</p>
+      <section className="mt-10">
+        <h2 className="text-2xl font-semibold text-gray-900">Why Dynamic Learning?</h2>
+
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="p-4 bg-white rounded-lg shadow-sm">
+            <h3 className="font-semibold">Adaptive Recommendations</h3>
+            <p className="text-sm text-gray-600 mt-2">Recommendations evolve as you complete modules and improve.</p>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm">
+            <h3 className="font-semibold">Microlearning Modules</h3>
+            <p className="text-sm text-gray-600 mt-2">Short, focused lessons that fit into your schedule.</p>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm">
+            <h3 className="font-semibold">Progress Tracking</h3>
+            <p className="text-sm text-gray-600 mt-2">Visualize strengths, gaps, and growth over time.</p>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm">
+            <h3 className="font-semibold">Expert-Curated Paths</h3>
+            <p className="text-sm text-gray-600 mt-2">Paths designed by educators and industry experts.</p>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm">
+            <h3 className="font-semibold">Assessments & Badges</h3>
+            <p className="text-sm text-gray-600 mt-2">Earn badges as you demonstrate mastery.</p>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm">
+            <h3 className="font-semibold">Community Support</h3>
+            <p className="text-sm text-gray-600 mt-2">Join study groups and share progress with peers.</p>
+          </div>
         </div>
-
-        <div className="p-6 bg-white shadow rounded-xl">
-          <h2 className="text-xl font-bold mb-2">Skill-Based Courses</h2>
-          <p className="text-gray-600">Choose from beginner to advanced level courses.</p>
-        </div>
-
-        <div className="p-6 bg-white shadow rounded-xl">
-          <h2 className="text-xl font-bold mb-2">Track Your Growth</h2>
-          <p className="text-gray-600">Visual progress tracking to measure improvements.</p>
-        </div>
-
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
