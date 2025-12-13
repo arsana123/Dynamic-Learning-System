@@ -13,13 +13,13 @@ export default function RecommendationCard({ course }) {
 
 			<div className="mt-4 flex items-center justify-between">
 				<div className="flex items-center gap-3">
-					<span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">{level}</span>
-					<span className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">Match {percent}%</span>
+					  <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">{level}</span>
+					  <span className="text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded">Match {percent}%</span>
 				</div>
 
 				<a
 					href={link}
-					className="text-sm font-semibold text-blue-600 hover:underline"
+					className="text-sm font-semibold text-indigo-600 hover:underline"
 					aria-label={`View course ${title}`}
 				>
 					View →

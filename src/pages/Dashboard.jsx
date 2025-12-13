@@ -25,7 +25,7 @@ export default function Dashboard() {
           className="p-6 bg-white shadow rounded-xl"
         >
           <h2 className="text-xl font-semibold">Current Level</h2>
-          <p className="text-3xl font-bold text-blue-600 mt-2">Intermediate</p>
+          <p className="text-3xl font-bold text-indigo-600 mt-2">Intermediate</p>
           <p className="text-gray-500 text-sm mt-1">Based on assessments</p>
         </motion.div>
 
@@ -60,7 +60,7 @@ export default function Dashboard() {
         <h2 className="text-2xl font-semibold mb-4">Your Progress</h2>
 
         <div className="w-full bg-gray-200 rounded-full h-4">
-          <div className="bg-blue-600 h-4 rounded-full" style={{ width: "65%" }}></div>
+          <div className="bg-indigo-600 h-4 rounded-full" style={{ width: "65%" }}></div>
         </div>
 
         <p className="mt-3 text-gray-700 font-medium">65% Completed</p>
@@ -75,7 +75,7 @@ export default function Dashboard() {
           <div className="p-5 bg-white shadow rounded-xl">
             <h3 className="text-lg font-bold">Advanced React Concepts</h3>
             <p className="text-gray-600 mt-2">Boost your React skills to the next level.</p>
-            <a href="/courses/react-advanced" className="text-blue-600 font-semibold mt-3 inline-block">
+            <a href="/courses/react-advanced" className="text-indigo-600 font-semibold mt-3 inline-block">
               View Course →
             </a>
           </div>
@@ -83,7 +83,7 @@ export default function Dashboard() {
           <div className="p-5 bg-white shadow rounded-xl">
             <h3 className="text-lg font-bold">Data Structures</h3>
             <p className="text-gray-600 mt-2">Strengthen your problem-solving skills.</p>
-            <a href="/courses/dsa" className="text-blue-600 font-semibold mt-3 inline-block">
+            <a href="/courses/dsa" className="text-indigo-600 font-semibold mt-3 inline-block">
               View Course →
             </a>
           </div>
@@ -91,7 +91,7 @@ export default function Dashboard() {
           <div className="p-5 bg-white shadow rounded-xl">
             <h3 className="text-lg font-bold">Node.js Essentials</h3>
             <p className="text-gray-600 mt-2">Learn backend development foundations.</p>
-            <a href="/courses/nodejs" className="text-blue-600 font-semibold mt-3 inline-block">
+            <a href="/courses/nodejs" className="text-indigo-600 font-semibold mt-3 inline-block">
               View Course →
             </a>
           </div>

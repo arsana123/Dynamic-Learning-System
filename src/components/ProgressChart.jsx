@@ -23,7 +23,7 @@ export default function ProgressChart({ percent = 0, size = 100, stroke = 8 }) {
 				<circle
 					r={radius}
 					fill="transparent"
-					stroke="#2563eb"
+					stroke="#4f46e5"
 					strokeWidth={stroke}
 					strokeLinecap="round"
 					strokeDasharray={`${circumference} ${circumference}`}
