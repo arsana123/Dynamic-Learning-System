@@ -13,7 +13,7 @@ import Assessment from './pages/Assessment';
 
 export default function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <div className="min-h-[calc(100vh-64px)] bg-gray-50">
         <Routes>
@@ -26,7 +26,7 @@ export default function App() {
           <Route path="/assessment" element={<Assessment />} />
         </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 
