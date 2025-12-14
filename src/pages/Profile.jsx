@@ -1,3 +1,7 @@
+import React from 'react'
+
+export default function Profile() { return null }
+
 import React from 'react';
 
 export default function Profile() {

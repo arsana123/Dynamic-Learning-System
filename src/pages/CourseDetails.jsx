@@ -1,3 +1,7 @@
+import React from 'react'
+
+export default function CourseDetails() { return null }
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
 

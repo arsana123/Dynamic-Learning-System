@@ -1,3 +1,7 @@
+import React from 'react'
+
+export default function Dashboard() { return null }
+
 import { motion } from "framer-motion";
 
 export default function Dashboard() {

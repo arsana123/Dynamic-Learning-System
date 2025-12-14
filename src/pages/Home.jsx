@@ -1,3 +1,9 @@
+import React from 'react'
+
+export default function Home() {
+  return null
+}
+
 // import { motion } from "framer-motion";
 
 // export default function Home() {

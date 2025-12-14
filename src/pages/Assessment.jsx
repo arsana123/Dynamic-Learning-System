@@ -1,3 +1,7 @@
+import React from 'react'
+
+export default function Assessment() { return null }
+
 import { useState } from "react";
 
 export default function Assessment() {
